@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "room_persistence"
+rootProject.name = "Room_persistence"
 include(":app")
  

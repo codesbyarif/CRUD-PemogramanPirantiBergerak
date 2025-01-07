@@ -46,7 +46,7 @@ class AddNoteActivity : AppCompatActivity() {
     }
     private fun saveNote(){
         val title = editTextTitle.text.toString()
-        val content = editTextContent.toString()
+        val content = editTextContent.text.toString()
         val timestamp = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).format(Date())
         val note = Note(title = title, content = content, timestamp = timestamp)
         CoroutineScope(Dispatchers.IO).launch {
